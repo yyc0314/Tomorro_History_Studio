@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Huninn&amp;family=Noto+Sans+TC:wght@400;700;900&amp;family=LXGW+WenKai+TC:wght@400;700&amp;family=Iansui&amp;family=Noto+Serif+TC:wght@700&amp;family=Chiron+Hei+HK:wght@400;700&amp;display=swap" rel="stylesheet">
+<style>body{margin:0;background:#FFF7E3;} a{color:#9E2B25;} a:hover{color:#241E1B;}</style>
+</helmet>
+<div style="min-height:100vh;background:#FFF7E3;padding:clamp(28px,5vw,64px) clamp(20px,5vw,72px);box-sizing:border-box;display:flex;flex-direction:column;gap:clamp(24px,4vw,40px);">
+  <div style="display:flex;flex-direction:column;gap:10px;font-family:'Noto Sans TC',sans-serif;">
+    <h1 style="margin:0;font-size:28px;font-weight:700;color:#241E1B;">字體比較</h1>
+    <p style="margin:0;max-width:44em;font-size:15px;line-height:1.8;color:#4A3D33;">以下都是 Google Fonts 上的繁中字體，載入方式和現在一樣，網站不會變慢。內容取自網站實際文字，請組員選一個代號回覆。</p>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,440px),1fr));gap:clamp(16px,2vw,28px);">
+    <div id="A" style="display:flex;flex-direction:column;gap:22px;padding:clamp(24px,3vw,36px);border:1px solid #E0CDA6;background:#FFFBF0;min-width:0;">
+      <div style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;font-family:'Noto Sans TC',sans-serif;">
+        <span style="display:inline-flex;align-items:center;justify-content:center;min-width:30px;height:30px;padding:0 8px;background:#9E2B25;color:#FFF7E3;font-size:14px;font-weight:700;">A</span>
+        <span style="font-size:17px;font-weight:700;color:#241E1B;">現況</span>
+        <span style="font-size:13px;color:#6B5C46;">Noto Sans TC 900 ＋ 粉圓 Huninn</span>
+      </div>
+      <p style="margin:-10px 0 0;font-family:'Noto Sans TC',sans-serif;font-size:14px;line-height:1.7;color:#6B5C46;">組員覺得太粗的版本，當作對照</p>
+      <div style="display:flex;flex-direction:column;gap:14px;padding-top:22px;border-top:1px solid #E0CDA6;">
+        <h1 style="margin:0;font-family:'Noto Sans TC',sans-serif;font-weight:900;font-size:clamp(32px,3.6vw,46px);line-height:1.25;letter-spacing:-0.01em;color:#241E1B;">讓歷史成為未來的養分</h1>
+        <span style="font-family:'Huninn',sans-serif;font-weight:400;font-size:16px;letter-spacing:0.12em;color:#9E2B25;">美術｜影音｜田調｜資料｜AI</span>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px;">
+        <h2 style="margin:0;font-family:'Noto Sans TC',sans-serif;font-weight:900;font-size:30px;line-height:1.3;color:#241E1B;">關於我們</h2>
+        <p style="margin:0;font-family:'Huninn',sans-serif;font-weight:400;font-size:17px;line-height:1.95;color:#4A3D33;text-wrap:pretty;">明日歷史工作室隸屬於國立成功大學歷史學系，為本系張哲維助理教授創立之工作團隊。成立旨在整合歷史學系相關資源，建立專案執行、空間管理及設備運用機制，提供穩定且制度化的工作環境，促進歷史專業與數位技術之整合應用。</p>
+      </div>
+      <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
+        <span style="font-family:'Noto Sans TC',sans-serif;font-weight:900;font-size:20px;color:#241E1B;">田野調查組</span>
+        <span style="padding:11px 22px;border:1px solid #9E2B25;font-family:'Huninn',sans-serif;font-weight:400;font-size:15px;color:#9E2B25;">預約表單</span>
+      </div>
+    </div>
+    <div id="B" style="display:flex;flex-direction:column;gap:22px;padding:clamp(24px,3vw,36px);border:1px solid #E0CDA6;background:#FFFBF0;min-width:0;">
+      <div style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;font-family:'Noto Sans TC',sans-serif;">
+        <span style="display:inline-flex;align-items:center;justify-content:center;min-width:30px;height:30px;padding:0 8px;background:#9E2B25;color:#FFF7E3;font-size:14px;font-weight:700;">B</span>
+        <span style="font-size:17px;font-weight:700;color:#241E1B;">只降粗細</span>
+        <span style="font-size:13px;color:#6B5C46;">Noto Sans TC 700 ＋ 粉圓 Huninn</span>
+      </div>
+      <p style="margin:-10px 0 0;font-family:'Noto Sans TC',sans-serif;font-size:14px;line-height:1.7;color:#6B5C46;">字體不換，標題改細一級</p>
+      <div style="display:flex;flex-direction:column;gap:14px;padding-top:22px;border-top:1px solid #E0CDA6;">
+        <h1 style="margin:0;font-family:'Noto Sans TC',sans-serif;font-weight:700;font-size:clamp(32px,3.6vw,46px);line-height:1.25;letter-spacing:-0.01em;color:#241E1B;">讓歷史成為未來的養分</h1>
+        <span style="font-family:'Huninn',sans-serif;font-weight:400;font-size:16px;letter-spacing:0.12em;color:#9E2B25;">美術｜影音｜田調｜資料｜AI</span>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px;">
+        <h2 style="margin:0;font-family:'Noto Sans TC',sans-serif;font-weight:700;font-size:30px;line-height:1.3;color:#241E1B;">關於我們</h2>
+        <p style="margin:0;font-family:'Huninn',sans-serif;font-weight:400;font-size:17px;line-height:1.95;color:#4A3D33;text-wrap:pretty;">明日歷史工作室隸屬於國立成功大學歷史學系，為本系張哲維助理教授創立之工作團隊。成立旨在整合歷史學系相關資源，建立專案執行、空間管理及設備運用機制，提供穩定且制度化的工作環境，促進歷史專業與數位技術之整合應用。</p>
+      </div>
+      <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
+        <span style="font-family:'Noto Sans TC',sans-serif;font-weight:700;font-size:20px;color:#241E1B;">田野調查組</span>
+        <span style="padding:11px 22px;border:1px solid #9E2B25;font-family:'Huninn',sans-serif;font-weight:400;font-size:15px;color:#9E2B25;">預約表單</span>
+      </div>
+    </div>
+    <div id="C" style="display:flex;flex-direction:column;gap:22px;padding:clamp(24px,3vw,36px);border:1px solid #E0CDA6;background:#FFFBF0;min-width:0;">
+      <div style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;font-family:'Noto Sans TC',sans-serif;">
+        <span style="display:inline-flex;align-items:center;justify-content:center;min-width:30px;height:30px;padding:0 8px;background:#9E2B25;color:#FFF7E3;font-size:14px;font-weight:700;">C</span>
+        <span style="font-size:17px;font-weight:700;color:#241E1B;">霞鶩文楷</span>
+        <span style="font-size:13px;color:#6B5C46;">LXGW WenKai TC 700 ＋ 400</span>
+      </div>
+      <p style="margin:-10px 0 0;font-family:'Noto Sans TC',sans-serif;font-size:14px;line-height:1.7;color:#6B5C46;">楷書筆意、有書卷感，最貼近歷史的調性</p>
+      <div style="display:flex;flex-direction:column;gap:14px;padding-top:22px;border-top:1px solid #E0CDA6;">
+        <h1 style="margin:0;font-family:'LXGW WenKai TC',sans-serif;font-weight:700;font-size:clamp(32px,3.6vw,46px);line-height:1.25;letter-spacing:-0.01em;color:#241E1B;">讓歷史成為未來的養分</h1>
+        <span style="font-family:'LXGW WenKai TC',sans-serif;font-weight:400;font-size:16px;letter-spacing:0.12em;color:#9E2B25;">美術｜影音｜田調｜資料｜AI</span>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px;">
+        <h2 style="margin:0;font-family:'LXGW WenKai TC',sans-serif;font-weight:700;font-size:30px;line-height:1.3;color:#241E1B;">關於我們</h2>
+        <p style="margin:0;font-family:'LXGW WenKai TC',sans-serif;font-weight:400;font-size:17px;line-height:1.95;color:#4A3D33;text-wrap:pretty;">明日歷史工作室隸屬於國立成功大學歷史學系，為本系張哲維助理教授創立之工作團隊。成立旨在整合歷史學系相關資源，建立專案執行、空間管理及設備運用機制，提供穩定且制度化的工作環境，促進歷史專業與數位技術之整合應用。</p>
+      </div>
+      <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
+        <span style="font-family:'LXGW WenKai TC',sans-serif;font-weight:700;font-size:20px;color:#241E1B;">田野調查組</span>
+        <span style="padding:11px 22px;border:1px solid #9E2B25;font-family:'LXGW WenKai TC',sans-serif;font-weight:400;font-size:15px;color:#9E2B25;">預約表單</span>
+      </div>
+    </div>
+    <div id="D" style="display:flex;flex-direction:column;gap:22px;padding:clamp(24px,3vw,36px);border:1px solid #E0CDA6;background:#FFFBF0;min-width:0;">
+      <div style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;font-family:'Noto Sans TC',sans-serif;">
+        <span style="display:inline-flex;align-items:center;justify-content:center;min-width:30px;height:30px;padding:0 8px;background:#9E2B25;color:#FFF7E3;font-size:14px;font-weight:700;">D</span>
+        <span style="font-size:17px;font-weight:700;color:#241E1B;">芫荽</span>
+        <span style="font-size:13px;color:#6B5C46;">Iansui（標題與內文同一套）</span>
+      </div>
+      <p style="margin:-10px 0 0;font-family:'Noto Sans TC',sans-serif;font-size:14px;line-height:1.7;color:#6B5C46;">手寫感的細圓體，比粉圓輕、比較活潑</p>
+      <div style="display:flex;flex-direction:column;gap:14px;padding-top:22px;border-top:1px solid #E0CDA6;">
+        <h1 style="margin:0;font-family:'Iansui',sans-serif;font-weight:400;font-size:clamp(32px,3.6vw,46px);line-height:1.25;letter-spacing:-0.01em;color:#241E1B;">讓歷史成為未來的養分</h1>
+        <span style="font-family:'Iansui',sans-serif;font-weight:400;font-size:16px;letter-spacing:0.12em;color:#9E2B25;">美術｜影音｜田調｜資料｜AI</span>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px;">
+        <h2 style="margin:0;font-family:'Iansui',sans-serif;font-weight:400;font-size:30px;line-height:1.3;color:#241E1B;">關於我們</h2>
+        <p style="margin:0;font-family:'Iansui',sans-serif;font-weight:400;font-size:17px;line-height:1.95;color:#4A3D33;text-wrap:pretty;">明日歷史工作室隸屬於國立成功大學歷史學系，為本系張哲維助理教授創立之工作團隊。成立旨在整合歷史學系相關資源，建立專案執行、空間管理及設備運用機制，提供穩定且制度化的工作環境，促進歷史專業與數位技術之整合應用。</p>
+      </div>
+      <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
+        <span style="font-family:'Iansui',sans-serif;font-weight:400;font-size:20px;color:#241E1B;">田野調查組</span>
+        <span style="padding:11px 22px;border:1px solid #9E2B25;font-family:'Iansui',sans-serif;font-weight:400;font-size:15px;color:#9E2B25;">預約表單</span>
+      </div>
+    </div>
+    <div id="E" style="display:flex;flex-direction:column;gap:22px;padding:clamp(24px,3vw,36px);border:1px solid #E0CDA6;background:#FFFBF0;min-width:0;">
+      <div style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;font-family:'Noto Sans TC',sans-serif;">
+        <span style="display:inline-flex;align-items:center;justify-content:center;min-width:30px;height:30px;padding:0 8px;background:#9E2B25;color:#FFF7E3;font-size:14px;font-weight:700;">E</span>
+        <span style="font-size:17px;font-weight:700;color:#241E1B;">思源宋體標題</span>
+        <span style="font-size:13px;color:#6B5C46;">Noto Serif TC 700 ＋ Noto Sans TC 400</span>
+      </div>
+      <p style="margin:-10px 0 0;font-family:'Noto Sans TC',sans-serif;font-size:14px;line-height:1.7;color:#6B5C46;">宋體標題配細黑內文，像出版品，最正式</p>
+      <div style="display:flex;flex-direction:column;gap:14px;padding-top:22px;border-top:1px solid #E0CDA6;">
+        <h1 style="margin:0;font-family:'Noto Serif TC',sans-serif;font-weight:700;font-size:clamp(32px,3.6vw,46px);line-height:1.25;letter-spacing:-0.01em;color:#241E1B;">讓歷史成為未來的養分</h1>
+        <span style="font-family:'Noto Sans TC',sans-serif;font-weight:400;font-size:16px;letter-spacing:0.12em;color:#9E2B25;">美術｜影音｜田調｜資料｜AI</span>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px;">
+        <h2 style="margin:0;font-family:'Noto Serif TC',sans-serif;font-weight:700;font-size:30px;line-height:1.3;color:#241E1B;">關於我們</h2>
+        <p style="margin:0;font-family:'Noto Sans TC',sans-serif;font-weight:400;font-size:17px;line-height:1.95;color:#4A3D33;text-wrap:pretty;">明日歷史工作室隸屬於國立成功大學歷史學系，為本系張哲維助理教授創立之工作團隊。成立旨在整合歷史學系相關資源，建立專案執行、空間管理及設備運用機制，提供穩定且制度化的工作環境，促進歷史專業與數位技術之整合應用。</p>
+      </div>
+      <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
+        <span style="font-family:'Noto Serif TC',sans-serif;font-weight:700;font-size:20px;color:#241E1B;">田野調查組</span>
+        <span style="padding:11px 22px;border:1px solid #9E2B25;font-family:'Noto Sans TC',sans-serif;font-weight:400;font-size:15px;color:#9E2B25;">預約表單</span>
+      </div>
+    </div>
+    <div id="F" style="display:flex;flex-direction:column;gap:22px;padding:clamp(24px,3vw,36px);border:1px solid #E0CDA6;background:#FFFBF0;min-width:0;">
+      <div style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;font-family:'Noto Sans TC',sans-serif;">
+        <span style="display:inline-flex;align-items:center;justify-content:center;min-width:30px;height:30px;padding:0 8px;background:#9E2B25;color:#FFF7E3;font-size:14px;font-weight:700;">F</span>
+        <span style="font-size:17px;font-weight:700;color:#241E1B;">昭源黑體</span>
+        <span style="font-size:13px;color:#6B5C46;">Chiron Hei HK 700 ＋ 400</span>
+      </div>
+      <p style="margin:-10px 0 0;font-family:'Noto Sans TC',sans-serif;font-size:14px;line-height:1.7;color:#6B5C46;">現代黑體，乾淨俐落，粗細比思源輕盈</p>
+      <div style="display:flex;flex-direction:column;gap:14px;padding-top:22px;border-top:1px solid #E0CDA6;">
+        <h1 style="margin:0;font-family:'Chiron Hei HK',sans-serif;font-weight:700;font-size:clamp(32px,3.6vw,46px);line-height:1.25;letter-spacing:-0.01em;color:#241E1B;">讓歷史成為未來的養分</h1>
+        <span style="font-family:'Chiron Hei HK',sans-serif;font-weight:400;font-size:16px;letter-spacing:0.12em;color:#9E2B25;">美術｜影音｜田調｜資料｜AI</span>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px;">
+        <h2 style="margin:0;font-family:'Chiron Hei HK',sans-serif;font-weight:700;font-size:30px;line-height:1.3;color:#241E1B;">關於我們</h2>
+        <p style="margin:0;font-family:'Chiron Hei HK',sans-serif;font-weight:400;font-size:17px;line-height:1.95;color:#4A3D33;text-wrap:pretty;">明日歷史工作室隸屬於國立成功大學歷史學系，為本系張哲維助理教授創立之工作團隊。成立旨在整合歷史學系相關資源，建立專案執行、空間管理及設備運用機制，提供穩定且制度化的工作環境，促進歷史專業與數位技術之整合應用。</p>
+      </div>
+      <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
+        <span style="font-family:'Chiron Hei HK',sans-serif;font-weight:700;font-size:20px;color:#241E1B;">田野調查組</span>
+        <span style="padding:11px 22px;border:1px solid #9E2B25;font-family:'Chiron Hei HK',sans-serif;font-weight:400;font-size:15px;color:#9E2B25;">預約表單</span>
+      </div>
+    </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {}
+</script>
+</body>
+</html>
